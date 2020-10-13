@@ -34,11 +34,11 @@ router.post("/register", (req, res, next) => {
 });
 
 router.get("/register", (req, res, next) => {
-  res.send("Hello");
+  res.send("Hello there");
 });
 
 router.post("/login", passport.authenticate("local"), (req, res, next) => {
-  console.log("You made it..");
+  console.log("You made it!!");
   const obj = {
     msg: "success",
     user: req.user,
